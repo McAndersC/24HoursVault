@@ -29,8 +29,9 @@ body {
     font-size: 16px;
     font-family: var(--font-family);
     margin : 0;
-    
-    padding : 40px;
+    padding : 0;
+    height : 100%;
+    width: 100%;
 }
 
 .p {
@@ -135,4 +136,29 @@ button {
 */
 .hero {
     min-height: 50vh;
+}
+
+
+/*
+
+
+    navigation
+
+
+*/
+.page-wrapper {
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+
+    
+}
+
+.content {
+    max-width: 79vw;
 }

@@ -4,9 +4,8 @@ const twentyFourHoursVault = {};
 twentyFourHoursVault.clearRelease = (e) => {
 
     e.preventDefault();
-    console.log('Deleting Data');
-    fetch('/moments/clear')
-    .then((response) => response.json()).then( (response) => {
+  
+    fetch('/moments/clear').then((response) => response.json()).then( (response) => {
 
         console.log('response', response);
 
@@ -17,9 +16,8 @@ twentyFourHoursVault.clearRelease = (e) => {
 twentyFourHoursVault.generateData = (e) => {
 
     e.preventDefault();
-    console.log('Generating Data');
-    fetch('/moments/generate')
-    .then((response) => response.json()).then( (response) => {
+
+    fetch('/moments/generate').then((response) => response.json()).then( (response) => {
 
         console.log('response', response);
 
@@ -28,8 +26,6 @@ twentyFourHoursVault.generateData = (e) => {
 }
 
 twentyFourHoursVault.init = () => {
-
-    console.log('Initializing twentyFourHoursVault');
 
     const btns = document.querySelectorAll('.btn-action');
 
@@ -45,11 +41,7 @@ twentyFourHoursVault.init = () => {
             default:
                 break;
         }
-        
-      
-    
     })
-    
 
 }
 
