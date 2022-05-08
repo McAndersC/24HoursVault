@@ -8,24 +8,30 @@
     <link href="/css/preview/index.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/assets/mcdm/mcdm_ico.png" rel="icon">
-    <script src="/js/index.js" type="module" defer></script>
-    <title>24HoursViborg Front Office :: Vault</title>
+    <script src="/js/bundle.js" type="module" defer></script>
+    <title>Vault Release :: 24HoursViborg Front Office</title>
 </head>
 <body>
     <div class="page-wrapper">
         <main class="content">
+
             <header class="header">
                 <img src="/assets/mcdm/icon-mcdm.svg" alt="24HoursViborg Front Office :: Moment Create System" width="50">
-                <h1 class="heading">24HoursVault - Opret data til release</h1>
+                <h1 class="heading">24HoursVault - Vault Release</h1>
             </header>
+
             <section class="section section-description">
                 <p class="p">Dette er vores egen data bank for alle færdigt produceret "Moments".</p> 
-                <p class="p">Hvis man opdatere data mappen, med nye moments eller ændringer til de nuværende, så skal man generere et nyt sæt data.</p>  
+                <p class="p">Hvis man opdaterer data mappen (vault), med nye moments eller ændringer til de nuværende, så skal man trykke "opret ny release data" og dermed et nyt sæt filer til upload på serveren data.</p> 
+                
+                <p>Filer til upload på serveren er i release mappen og skal placeres i de tilsvarende mapper på serveren.</p>
             </section>
+
             <section>
                 <button class="btn btn-action" type="button" data-action="create">Opret ny release data</button>
                 <button class="btn btn-action" type="button" data-action="clear">Slet release indhold</button>
             </section>
+
         </main>
     </div>
 </body>

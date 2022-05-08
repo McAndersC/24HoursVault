@@ -1,4 +1,4 @@
-
+import timeline from './timeline.js'
 const twentyFourHoursVault = {};
 
 twentyFourHoursVault.clearRelease = (e) => {
@@ -25,6 +25,7 @@ twentyFourHoursVault.generateData = (e) => {
 
 }
 
+
 twentyFourHoursVault.init = () => {
 
     const btns = document.querySelectorAll('.btn-action');
@@ -43,6 +44,10 @@ twentyFourHoursVault.init = () => {
         }
     })
 
+    timeline.setup().then(result => console.log(result))
+
 }
 
 twentyFourHoursVault.init();
+
+

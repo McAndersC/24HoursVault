@@ -8,7 +8,8 @@ module.exports = {
     "ignorePatterns": ["/client/*"],
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "rules": {
     }

@@ -24,6 +24,7 @@ html {
 }
 
 
+
 body {
     background-color: #ebebeb;
     font-size: 16px;
@@ -32,6 +33,7 @@ body {
     padding : 0;
     height : 100%;
     width: 100%;
+    padding: 40px;
 }
 
 .p {
@@ -43,6 +45,10 @@ body {
     Sections
 
 */
+section {
+    width: 79vw;
+}
+
 
 .section-description {
     margin : 20px 0;
@@ -108,6 +114,14 @@ textarea.tmpl {
     resize: vertical;
 }
 
+select {
+
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+
+}
+
 label {
     font-family: var(--font-family);
     line-height: 25px;
@@ -124,6 +138,13 @@ button {
     border : 0;
     cursor: pointer;
     font-family: var(--font-family);
+    margin-bottom: 10px;
+}
+
+button:disabled {
+    background-color: #8e8fae;
+    color: rgb(199, 197, 197);
+    font-style: italic;
 }
 
 
@@ -161,4 +182,30 @@ button {
 
 .content {
     max-width: 79vw;
+}
+
+
+
+/*
+
+*/
+
+.slots {
+    margin: 20px 0;
+}
+
+.timeline-list-slot-item {
+
+    padding: 10px 0;
+
+}
+
+.timeline-edit {
+
+    display: none;
+
+}
+
+.timeline-edit.active {
+    display: block;
 }

@@ -1,0 +1,31 @@
+[
+    {
+        "period" : "03:00 - 06:00",
+        "title" : "NAT I VIBORG",
+        "theme" : "light",
+        "id" : "slot01",
+        "slots" : []
+    },
+    {
+        "period" : "06:00 - 09:00",
+        "title" : "Ikke NAT I VIBORG",
+        "id" : "slot02",
+        "theme" : "light",
+        "slots" : [
+            {
+                "id" : "18-30-en-god-titel",
+                "url" : "moments/18-30-en-god-titel.html",
+                "size" : "height3",
+                "time" : "02:30",
+                "text" : "En god titel"
+            }
+        ]
+    },
+    {
+        "period" : "03:00 - 06:00",
+        "title" : "NAT I VIBORG",
+        "theme" : "light",
+        "id" : "slot03",
+        "slots" : []
+    },
+]
