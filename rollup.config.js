@@ -6,7 +6,7 @@ import livereload from 'rollup-plugin-livereload';
 export default {
     input: 'client/js/index.js',
     plugins: [
-        devMode ? livereload({delay: 100}) : false
+      devMode ? livereload({delay: 100, watch: 'client/**/*'}) : false
     ],
     output: {
       file: 'client/js/bundle.js',
